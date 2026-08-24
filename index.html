@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receipt Validation Demo</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Arial, "Noto Sans Ethiopic", sans-serif;
+    background: #f3f5f7;
+    color: #1f2937;
+  }
+  .demo-banner {
+    background: #fff3cd;
+    color: #664d03;
+    border-bottom: 1px solid #ffecb5;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .container {
+    max-width: 760px;
+    margin: 35px auto;
+    padding: 0 18px;
+  }
+  .card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 24px rgba(0,0,0,.08);
+    overflow: hidden;
+  }
+  .header {
+    background: #123b5d;
+    color: white;
+    padding: 28px 30px;
+  }
+  .header h1 { margin: 0 0 8px; font-size: 25px; }
+  .header p { margin: 0; opacity: .9; }
+  .status {
+    margin: 24px 30px 8px;
+    padding: 13px 16px;
+    border-radius: 8px;
+    background: #eaf7ee;
+    color: #176b35;
+    font-weight: 700;
+  }
+  .details { padding: 10px 30px 30px; }
+  .row {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .label { font-weight: 700; color: #4b5563; }
+  .value { word-break: break-word; }
+  .qr-section {
+    text-align: center;
+    padding: 25px 30px 32px;
+    border-top: 1px solid #e5e7eb;
+  }
+  .qr-section img { width: 190px; height: 190px; }
+  .qr-section p { margin: 10px 0 0; color: #6b7280; font-size: 13px; }
+  .footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  @media (max-width: 600px) {
+    .row { grid-template-columns: 1fr; gap: 5px; }
+    .header, .details { padding-left: 20px; padding-right: 20px; }
+    .status { margin-left: 20px; margin-right: 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="demo-banner">DEMO / SAMPLE — NOT AN OFFICIAL GOVERNMENT VALIDATION PAGE</div>
+
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <h1>Ministry of Revenue: Valid Receipt</h1>
+      <p>Receipt information — demonstration</p>
+    </div>
+
+    <div class="status">✓ Sample receipt information displayed</div>
+
+    <div class="details">
+      <div class="row">
+        <div class="label">የደረሰኝ መለያ ቁጥር</div>
+        <div class="value">783</div>
+      </div>
+      <div class="row">
+        <div class="label">የግብር ከፋይ መለያ ቁጥር</div>
+        <div class="value">0024708478</div>
+      </div>
+      <div class="row">
+        <div class="label">የደረሰኝ ዓይነት</div>
+        <div class="value">CASH SALES INVOICE/VAT</div>
+      </div>
+      <div class="row">
+        <div class="label">የግብር ከፋዩ ስም</div>
+        <div class="value">ALEYAS MOTA OSA</div>
+      </div>
+      <div class="row">
+        <div class="label">የግብሩ ክፋዩ ታክስ ማዕከል</div>
+        <div class="value">SERS HUMBO TEBELA TOWN</div>
+      </div>
+      <div class="row">
+        <div class="label">የቫት/VAT/ መለያ ቁጥር</div>
+        <div class="value">11314381165</div>
+      </div>
+      <div class="row">
+        <div class="label">የቫት/VAT/ ቁጥር</div>
+        <div class="value">2285991165</div>
+      </div>
+      <div class="row">
+        <div class="label">የማተሚያ ቤት ስም</div>
+        <div class="value">BERHANENA SELAM PRINTING ENTERPRISE</div>
+      </div>
+    </div>
+
+    <div class="qr-section">
+      <img src="qr_code.png" alt="Demo QR code">
+      <p>Scanning this QR code opens: http://www.erca.gov.et:8007</p>
+    </div>
+  </div>
+  <div class="footer">Demonstration webpage for design/testing purposes.</div>
+</div>
+</body>
+</html>
