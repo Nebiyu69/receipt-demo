@@ -1,40 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Receipt Details - Demo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Receipt Demo</title>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  body {
+    color: #111;
+    font-family: "Noto Serif Ethiopic", "Nyala",
+                 "Times New Roman", serif;
+  }
+
+  .demo {
+    width: 100%;
+    background: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 7px 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .receipt {
+    width: 96%;
+    max-width: 700px;
+    margin: 10px auto 0;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 25px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .details {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.48;
+  }
+
+  .details p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .demo-note {
+    margin: 25px auto 0;
+    max-width: 360px;
+    padding: 7px;
+    border: 1px solid #8b0000;
+    color: #8b0000;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 500px) {
+    .receipt {
+      margin-top: 9px;
+    }
+
+    h1 {
+      font-size: 23px;
+      margin-bottom: 25px;
+    }
+
+    .details {
+      font-size: 19px;
+      line-height: 1.48;
+    }
+  }
+</style>
 </head>
 
 <body>
-  <main class="receipt-page">
 
-    <!-- Important: This is a demonstration page, not an official government website. -->
-    <div class="demo-warning">
-      DEMO / NOT AN OFFICIAL RECEIPT
-    </div>
+<div class="demo">
+  DEMO / NOT AN OFFICIAL RECEIPT
+</div>
 
-    <h1>Ministry of Revenue: Valid Receipt</h1>
+<div class="receipt">
 
-    <section class="receipt-details" aria-label="Demo receipt details">
-      <p>የደረሰኝ ማሽን ቁጥር: <strong>14948</strong></p>
-      <p>የግብር ከፋይ ማሽን ቁጥር: <strong>0004377348</strong></p>
-      <p>የደረሰኝ ዓይነት: <strong>CASH SALES INVOICE/VAT</strong></p>
-      <p>የግብር ከፋይ ስም: <strong>ሀለማ እንግዳው እስራ</strong></p>
-      <p>የግብር ከፋይ ታክስ ማዕከል: <strong>SERS GESUBA TOWN</strong></p>
-      <p>የቲን/VAT ማሽን ቁጥር: <strong>6155340892</strong></p>
-      <p>የቲን/VAT ቁጥር: <strong>1194970892</strong></p>
-      <p>የማተሚያ ቤት ስም: <strong>BERHANENA SELAM PRINTING ENTERPRISE</strong></p>
-    </section>
+  <h1>Ministry of Revenue: Valid Receipt</h1>
 
-    <div class="receipt-number">
-      Receipt No: <strong>795</strong>
-    </div>
+  <div class="details">
 
-    <p class="demo-note">
-      This page is a visual demonstration only and is not affiliated with,
-      issued by, or validated by the Ethiopian Ministry of Revenue.
+    <p>የደረሰኝ መለያ ቁጥር: 795</p>
+
+    <p>የደረሰኝ ሁኔታ: DEMO</p>
+
+    <p>ይህ ገጽ ለማሳያ እና ለሙከራ ብቻ ነው።</p>
+
+  </div>
+
+  <div class="demo-note">
+    DEMO / NOT AN OFFICIAL RECEIPT
+  </div>
+
+</div>
+
+</body>
+</html>      issued by, or validated by the Ethiopian Ministry of Revenue.
     </p>
 
   </main>
